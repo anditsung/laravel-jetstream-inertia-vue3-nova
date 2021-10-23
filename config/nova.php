@@ -99,6 +99,8 @@ return [
 
     'middleware' => [
         'web',
+        'auth:sanctum',
+        'verified',
         Authenticate::class,
         DispatchServingNovaEvent::class,
         BootTools::class,
